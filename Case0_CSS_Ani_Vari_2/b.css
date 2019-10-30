@@ -9,7 +9,7 @@ div.grid {
  height: 190px;
  margin: 5px;
  line-height: 190px;
- box-shadow: 5px 5px 5px gray;
+ box-shadow: 5px 5px 5px red;
  font-size: 20px;
  display: inline-block;
 }
