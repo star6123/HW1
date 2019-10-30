@@ -1,0 +1,119 @@
+:root {
+	--back_color: red; /* Default value */
+	--heartbeat: 0s; /* Default value */
+}
+
+body {
+	margin: 0;
+	text-align: center;
+}
+
+/* Style the header */
+header {
+    background-color:	#FF8888;
+    padding: 5px;
+    text-align: center;
+    color: black;
+}
+
+section {
+	padding: 5px;
+}
+
+/* Style the footer */
+footer {
+    background-color:	#FFFF77;
+    padding: 10px;
+    text-align: center;
+    color: black;
+}
+
+div.grid1 {
+	background-color: var(--back_color);
+	animation-name: ani_grid1;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+
+div.grid2 {
+	background-color: #00FF99;
+	animation-name: ani_grid2;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+
+div.grid3 {
+	background-color: blue;
+	animation-name: ani_grid3;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+
+div.grid4 {
+	background-color: yellow;
+	animation-name: ani_grid4;
+	animation-duration: 10s;
+	animation-iteration-count: infinite ;
+}
+
+/* CSS transform standard syntax */
+@keyframes ani_grid1 {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes ani_grid2 {
+	0% {background-color:#F0BBFF;}
+	20% {background-color:#E38EFF;}
+	40% {background-color:#E93EFF;}
+	60% {background-color:#CC00FF;}
+	80% {background-color:#A500CC;}
+	100% {background-color:#7A0099;}
+}
+@keyframes ani_grid3 {
+	from {
+    margin-left: 0px;
+  }
+  to {
+    margin-left: 120px;
+  }
+}
+@keyframes ani_grid4 {
+	0%{
+		transform:rotate(0deg);
+  }
+  50%{
+    transform:translateX(210px) rotate(180deg);
+  }
+  100%{
+	transform:translateX(420px) rotate(360deg);
+  }
+}
+
+
+.fas {
+	animation-name: heartbeat;
+    animation-duration: var(--heartbeat);
+	animation-iteration-count: infinite;
+}
+
+@keyframes heartbeat {
+	from {transform: scale(1,1); color: white;}
+	to {transform: scale(1.2,1.2); color: red;}
+}
+
+div.container {
+ width: 840px;
+ height: 420px;
+ margin: 0px auto;
+}
+
+div.grid {
+ width: 180px;
+ height: 180px;
+ margin: 5px;
+ line-height: 180px;
+ box-shadow: 5px 5px 5px gray;
+ font-size: 15px;
+ display: inline-block;
+}
